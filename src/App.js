@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './App.css';
+import Header from './Header';
 
 export default class App extends Component {
   constructor() {
@@ -8,9 +9,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <main className="App">
-        <h1>Trick or Treat</h1>
-      </main>
+      <Header />
     )
   }
 }

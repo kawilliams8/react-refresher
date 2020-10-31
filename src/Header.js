@@ -1,10 +1,79 @@
 import React from 'react';
-import './Header.css';
+import './Header.scss';
 
 const Header = () => {
   return (
     <main className="Header">
-      <h1>Trick or Treat</h1>
+      <div>
+        <web>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </web>
+        <web>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <spider>
+            <i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+            </i>
+            <i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+            </i>
+          </spider>
+        </web>
+      </div>
+      <h1>🎃 Trick or Treat Tracker 🎃</h1>
     </main>
   );
 }

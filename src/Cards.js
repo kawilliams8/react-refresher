@@ -1,9 +1,12 @@
 import React from "react";
 import "./Cards.scss";
+import Card from './Card.js';
 
-const Cards = () => {
+const Cards = ({candy}) => {
   return (
-    <h2>Cards Cards Cards!</h2>
+    <div className="Cards">
+      <Card />
+    </div>
   );
 };
 

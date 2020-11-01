@@ -10,6 +10,7 @@ body {
 #root {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   margin: 0 10%;
   width: 80%;
 }

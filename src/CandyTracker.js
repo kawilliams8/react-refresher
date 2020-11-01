@@ -3,11 +3,11 @@ import './CandyTracker.scss';
 import Form from './Form';
 import Cards from './Cards';
 
-const CandyTracker = () => {
+const CandyTracker = ({candy}) => {
   return (
     <section className="CandyTracker">
       <Form />
-      <Cards />
+      <Cards candy={candy}/>
     </section>
   )
 }

@@ -22,7 +22,7 @@ export default class App extends Component {
       <Header />
       <div className="container">
         <CandyBag candy={this.state.candy}/>
-        <CandyTracker />
+        <CandyTracker candy={this.state.candy}/>
       </div>
       </>
     )

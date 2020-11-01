@@ -14,6 +14,20 @@ class Form extends Component {
     this.setState({ [event.target.name]: event.target.value });
   };
 
+  submitCandy = (event) => {
+    event.preventDefault();
+    const newCandy = {
+      id: Date.now(),
+      ...this.state,
+    };
+    this.props.addCandy(newCandy);
+    this.clearInputs();
+  };
+
+  clearInputs = () => {
+    this.setState({ name: "", count: "" });
+  };
+
   render() {
     return (
       <form>
@@ -33,7 +47,7 @@ class Form extends Component {
           onChange={(event) => this.handleChange(event)}
         />
 
-        <button>SUBMIT</button>
+        <button onClick={(event) => this.submitCandy(event)}>SUBMIT</button>
       </form>
     );
   }

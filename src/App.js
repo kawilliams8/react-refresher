@@ -20,13 +20,19 @@ export default class App extends Component {
     this.setState({ candy: [...this.state.candy, newCandy] });
   };
 
+  deleteCandy = (id) => {
+    const filteredCandy = this.state.candy.filter((candy) => candy.id != id);
+
+    this.setState({ candy: filteredCandy });
+  };
+
   render() {
     return (
       <>
         <Header />
         <div className="container">
           <CandyBag candy={this.state.candy} />
-          <CandyTracker candy={this.state.candy} addCandy={this.addCandy} />
+          <CandyTracker candy={this.state.candy} addCandy={this.addCandy} deleteCandy={this.deleteCandy}/>
         </div>
       </>
     );

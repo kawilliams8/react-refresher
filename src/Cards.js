@@ -2,7 +2,7 @@ import React from "react";
 import "./Cards.scss";
 import Card from './Card.js';
 
-const Cards = ({candy}) => {
+const Cards = ({candy, deleteCandy}) => {
 
   const cardsList = candy.map((el ) => {
     return (
@@ -10,6 +10,7 @@ const Cards = ({candy}) => {
         name={el.name}
         id={el.id}
         key={el.id}
+        deleteCandy={deleteCandy}
       />
     );
   });

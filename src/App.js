@@ -22,7 +22,6 @@ export default class App extends Component {
 
   deleteCandy = (id) => {
     const filteredCandy = this.state.candy.filter((candy) => candy.id != id);
-
     this.setState({ candy: filteredCandy });
   };
 

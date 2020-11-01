@@ -7,6 +7,13 @@ import CandyTracker from './CandyTracker.js';
 export default class App extends Component {
   constructor() {
     super();
+    this.state = {
+      candy: [
+        {id: 0, name: "Snickers"},
+        {id: 1, name: "Skittles"},
+        {id: 2, name: "Candy Corn"}
+      ],
+    };
   }
 
   render() {
@@ -14,7 +21,7 @@ export default class App extends Component {
       <>
       <Header />
       <div className="container">
-        <CandyBag />
+        <CandyBag candy={this.state.candy}/>
         <CandyTracker />
       </div>
       </>

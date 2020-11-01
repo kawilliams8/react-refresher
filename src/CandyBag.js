@@ -5,7 +5,7 @@ const CandyBag = ({candy}) => {
   const candyList = candy.map(item => {
     return (
       <li>
-        {item.name}
+        {item.name} : {item.count}
       </li>
     )
   })

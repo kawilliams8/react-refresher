@@ -9,22 +9,26 @@ export default class App extends Component {
     super();
     this.state = {
       candy: [
-        {id: 0, name: "Snickers"},
-        {id: 1, name: "Skittles"},
-        {id: 2, name: "Candy Corn"}
+        { id: 0, name: "Snickers", count: 1 },
+        { id: 1, name: "Skittles", count: 1 },
+        { id: 2, name: "Candy Corn", count: 1 },
       ],
     };
   }
 
+  addCandy = (newCandy) => {
+    this.setState({ candy: [...this.state.candy, newCandy] });
+  };
+
   render() {
     return (
       <>
-      <Header />
-      <div className="container">
-        <CandyBag candy={this.state.candy}/>
-        <CandyTracker candy={this.state.candy}/>
-      </div>
+        <Header />
+        <div className="container">
+          <CandyBag candy={this.state.candy} />
+          <CandyTracker candy={this.state.candy} addCandy={this.addCandy} />
+        </div>
       </>
-    )
+    );
   }
 }

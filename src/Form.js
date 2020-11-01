@@ -6,7 +6,7 @@ class Form extends Component {
     super();
     this.state = {
       name: "",
-      count: "",
+      count: 0,
     };
   }
 
@@ -25,7 +25,7 @@ class Form extends Component {
   };
 
   clearInputs = () => {
-    this.setState({ name: "", count: "" });
+    this.setState({ name: "", count: 0 });
   };
 
   render() {
@@ -40,7 +40,7 @@ class Form extends Component {
         />
 
         <input
-          type="text"
+          type="number"
           placeholder="Count"
           name="count"
           value={this.state.count}

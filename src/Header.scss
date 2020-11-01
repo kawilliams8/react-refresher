@@ -17,12 +17,7 @@ i {
     display: block;
 }
 
-*, *:before, *:after {
-    box-sizing: border-box;
-    content: '';
-}
-
-div {
+.Header div {
     width: 100vmin;
     height: 33vmin;
     position: absolute;

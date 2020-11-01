@@ -3,7 +3,7 @@ import './Header.scss';
 
 const Header = () => {
   return (
-    <main className="Header">
+    <header className="Header">
       <div>
         <web>
           <i></i>
@@ -74,7 +74,7 @@ const Header = () => {
         </web>
       </div>
       <h1>🎃 Trick or Treat Tracker 🎃</h1>
-    </main>
+    </header>
   );
 }
 

@@ -1,12 +1,36 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Form.scss";
 
-const Form = () => {
-  return (
-    <div className="Form">
-      <h3>Form Form Form</h3>
-    </div>
-  );
-};
+class Form extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "",
+      count: "",
+    };
+  }
+
+  render() {
+    return (
+      <form>
+        <input
+          type="text"
+          placeholder="Candy Name"
+          name="name"
+          value={this.state.name}
+        />
+
+        <input
+          type="text"
+          placeholder="Count"
+          name="count"
+          value={this.state.count}
+        />
+
+        <button>SUBMIT</button>
+      </form>
+    );
+  }
+}
 
 export default Form;

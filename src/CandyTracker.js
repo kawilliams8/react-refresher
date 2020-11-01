@@ -7,9 +7,10 @@ const CandyTracker = ({candy}) => {
   return (
     <section className="CandyTracker">
       <Form />
-      <Cards candy={candy}/>
+      {!candy.length && <h2>Trick or Treat!</h2>}
+      <Cards candy={candy} />
     </section>
-  )
+  );
 }
 
 export default CandyTracker;
